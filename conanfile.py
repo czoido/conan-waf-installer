@@ -22,7 +22,7 @@ class WAFInstallerConan(ConanFile):
         self.copy('waf', src='.', dst="bin", keep_path=False)
 
     def package_info(self):
-        self.env_info.PATH.append(os.path.join(self.package_folder, "bin"))
+        self.env_info.waf_script_folder = os.path.join(self.package_folder, "bin")
 
     def package_id(self):
         del self.info.settings.compiler
