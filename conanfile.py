@@ -4,7 +4,7 @@ import shutil
 
 
 class WAFInstallerConan(ConanFile):
-    name = "waf_installer"
+    name = "waf"
     version = "2.0.17"
     url = "https://github.com/czoido/conan-wasf-installer"
     description = "Waf is a Python-based framework for configuring, compiling and installing applications."
