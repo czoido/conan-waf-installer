@@ -1,3 +1,5 @@
+# Conan installer for the Waf build system [![Build Status](https://travis-ci.com/czoido/conan-waf-installer.svg?branch=master)](https://travis-ci.com/czoido/conan-waf-installer)
+
 ## How to Use
 
 1. Install conan: https://docs.conan.io/en/latest/installation.html
