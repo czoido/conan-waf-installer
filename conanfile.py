@@ -19,6 +19,8 @@ class WAFInstallerConan(ConanFile):
         tools.download(source_url, "waf")
         if self.settings.os_build == "Windows":
             tools.download("https://gitlab.com/ita1024/waf/raw/master/utils/waf.bat", "waf.bat")
+        elif self.settings.os_build == "Linux":
+            self.run("chmod 755 waf")
     
     def package(self):
         self.copy(pattern="LICENSE", src='.', dst="licenses")
