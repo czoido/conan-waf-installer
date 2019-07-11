@@ -29,7 +29,6 @@ class WAFInstallerConan(ConanFile):
             self.copy('waf.bat', src='.', dst="bin", keep_path=False)
 
     def package_info(self):
+        self.output.info("Using Waf %s version" % self.version)
         self.env_info.path.append(os.path.join(self.package_folder, "bin"))
-
-    def package_id(self):
-        del self.info.settings.compiler
+        
